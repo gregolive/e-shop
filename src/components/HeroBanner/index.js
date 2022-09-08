@@ -26,12 +26,8 @@ const HeroBanner = () => {
 
   return (
     <main className='bg-white w-full relative h-hero'>
-      {
-        {
-          0: <Slide slide={slides[0]} />,
-          1: <Slide slide={slides[1]} />,
-        }[page]
-      }
+      <Slide slide={slides[0]} isActive={(page === 0)} />
+      <Slide slide={slides[1]} isActive={(page === 1)} />
 
       <SlideBtns page={page} setPage={setPage} pageCount={slides.length - 1} />
     </main>

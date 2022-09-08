@@ -7,9 +7,6 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
-      color: {
-        'semi-transparent': 'rgba(0, 0, 0, 0.9)'
-      },
       height: {
         hero: 'calc(100vh - 6.5rem)',
         banner: '95%',
@@ -17,6 +14,15 @@ module.exports = {
       alignItems: {
         between: 'space-between',
       },
+      animation: {
+        fade: 'fade 1.5s',
+      },
+      keyframes: {
+        fade: {
+          'from': { opacity: '0.4' },
+          'to': { opacity: '1' },
+        }
+      }
     },
   },
   plugins: [],

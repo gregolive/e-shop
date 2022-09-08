@@ -1,8 +1,8 @@
-const Slide = ({ slide }) => {
+const Slide = ({ slide, isActive }) => {
   const { title, description, img, imgAlt, accentColor } = slide;
 
   return (
-    <>
+    <div className={`${(isActive) ? 'block' : 'hidden'} h-full animate-fade`}>
       <div className={`${accentColor} h-5/6 w-1/2 p-12 flex justify-center flex-col gap-3`}>
         <h1 className='text-4xl font-medium'>
           {title}
@@ -21,7 +21,7 @@ const Slide = ({ slide }) => {
       <div className='banner bg-stone-50 overflow-hidden'>
         <img src={img} alt={imgAlt} className='banner-img' />
       </div>
-    </>
+    </div>
   );
 };
 
