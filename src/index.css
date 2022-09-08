@@ -13,12 +13,33 @@
     flex flex-col items-center justify-between
   }
 
+  .btn {
+    @apply text-xl font-medium rounded px-6 py-2 
+    transition-all duration-300
+  }
+
+  .btn-primary {
+    @apply bg-blue-900 text-slate-50
+    hover:bg-blue-700
+  }
+
+  .btn-secondary {
+    @apply bg-pink-600 text-slate-50
+    hover:bg-pink-500
+  }
+
   .header {
-    @apply flex items-center justify-between 
-    text-xl w-10/12 pt-2 sm:py-3
+    @apply w-10/12 pt-2 sm:py-3
+    flex items-center justify-between 
+    
   }
 
   .header-link {
-    @apply relative flex transition-all duration-300
+    @apply text-xl hover:text-pink-600
+    transition-all duration-300
+  }
+
+  .banner-img {
+    @apply h-full object-cover
   }
 }

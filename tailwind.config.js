@@ -6,7 +6,11 @@ module.exports = {
   darkMode: 'class',
   mode: 'jit',
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        hero: 'calc(100vh - 6.5rem)',
+      },
+    },
   },
   plugins: [],
 }
