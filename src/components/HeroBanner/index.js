@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Slide from './Slide';
 import img1 from '../../assets/img/hero1.jpg';
 import img2 from '../../assets/img/hero2.jpg';
+import SlideBtns from './SlideBtns';
 
 const slides = [
   {
@@ -9,14 +10,14 @@ const slides = [
     description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.',
     img: img1,
     imgAlt: 'runner',
-    accentColor: 'bg-slate-300',
+    accentColor: 'bg-orange-50',
   },
   {
     title: 'Duis aute irure',
     description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.',
     img: img2,
     imgAlt: 'running shoes',
-    accentColor: 'bg-blue-200',
+    accentColor: 'bg-rose-50',
   },
 ];
 
@@ -31,6 +32,8 @@ const HeroBanner = () => {
           1: <Slide slide={slides[1]} />,
         }[page]
       }
+
+      <SlideBtns page={page} setPage={setPage} pageCount={slides.length - 1} />
     </main>
   );
 };

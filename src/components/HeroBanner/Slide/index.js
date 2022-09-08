@@ -1,5 +1,5 @@
 const Slide = ({ slide }) => {
-  const { title, description, img, imgAlt, accentColor } = slide
+  const { title, description, img, imgAlt, accentColor } = slide;
 
   return (
     <>
@@ -18,7 +18,7 @@ const Slide = ({ slide }) => {
         </button>
       </div>
       
-      <div className='bg-stone-50 pt-5 pl-5 overflow-hidden absolute bottom-0 right-0 h-11/12 w-3/5'>
+      <div className='banner bg-stone-50 overflow-hidden'>
         <img src={img} alt={imgAlt} className='banner-img' />
       </div>
     </>

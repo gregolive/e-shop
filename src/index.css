@@ -13,6 +13,8 @@
     flex flex-col items-center justify-between
   }
 
+  /* Buttons */
+
   .btn {
     @apply text-xl font-medium rounded px-6 py-2 
     transition-all duration-300
@@ -28,6 +30,8 @@
     hover:bg-pink-500
   }
 
+  /* Header */
+
   .header {
     @apply w-10/12 pt-2 sm:py-3
     flex items-center justify-between 
@@ -39,7 +43,23 @@
     transition-all duration-300
   }
 
+  /* Hero Banner */
+
+  .banner {
+    @apply absolute bottom-0 right-0 h-banner w-3/5 pt-5 pl-5
+  }
+
   .banner-img {
-    @apply h-full object-cover
+    @apply object-cover w-full h-full
+  }
+
+  .slider-dot {
+    @apply bg-gray-400 hover:bg-gray-500 opacity-50
+    rounded-full block h-3.5 w-3.5
+    transition-all duration-200
+  }
+
+  .slider-dot.active {
+    @apply bg-blue-900 opacity-100 hover:bg-blue-700
   }
 }
