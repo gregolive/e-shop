@@ -17,7 +17,7 @@
 
   .btn {
     @apply text-xl font-medium rounded px-6 py-2 
-    transition-all duration-300
+    drop-shadow-lg transition-all duration-300
   }
 
   .btn-primary {
@@ -33,9 +33,8 @@
   /* Header */
 
   .header {
-    @apply w-10/12 pt-2 sm:py-3
-    flex items-center justify-between 
-    
+    @apply w-10/12 py-3
+    flex items-center justify-between
   }
 
   .header-link {
@@ -45,12 +44,37 @@
 
   /* Hero Banner */
 
-  .banner {
-    @apply absolute bottom-0 right-0 h-banner w-3/5 pt-5 pl-5
+  .hero {
+    @apply bg-white relative
+    w-full lg:h-hero lg:min-h-0 min-h-bannerSmall
+  }
+
+  .banner-container {
+    @apply lg:absolute bottom-0 right-0
+    lg:h-banner lg:w-3/5 w-full
+    lg:pt-5 lg:pl-5
+  }
+
+  .banner-content {
+    @apply lg:bg-white lg:static absolute
+    lg:text-inherit text-white
+    h-full lg:h-5/6 w-full lg:w-1/2
+    lg:p-12 xl:pr-52 lg:pr-32 sm:px-14 px-10
+    flex items-center lg:items-start justify-center flex-col gap-3
   }
 
   .banner-img {
-    @apply object-cover w-full h-full
+    @apply object-cover w-full h-full lg:min-h-0 min-h-bannerSmall
+  }
+
+  .arrow-btns {
+    @apply banner-container flex justify-between items-center
+    lg:static absolute bottom-1/2
+  }
+
+  .dot-btns {
+    @apply absolute bottom-5 lg:bottom-0 left-0 lg:h-1/6 lg:w-2/5 w-full
+    flex items-center justify-center gap-2 
   }
 
   .slider-dot {

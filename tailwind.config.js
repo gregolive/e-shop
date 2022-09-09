@@ -11,8 +11,14 @@ module.exports = {
         hero: 'calc(100vh - 6.5rem)',
         banner: '95%',
       },
+      minHeight: {
+        bannerSmall: '30rem',
+      },
       alignItems: {
         between: 'space-between',
+      },
+      dropShadow: {
+        'text': '2px 2px 10px rgba(0, 0, 0, 0.9)',
       },
       animation: {
         fade: 'fade 1.5s',

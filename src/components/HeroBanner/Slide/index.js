@@ -3,22 +3,22 @@ const Slide = ({ slide, isActive }) => {
 
   return (
     <div className={`${(isActive) ? 'block' : 'hidden'} h-full animate-fade`}>
-      <div className={`${accentColor} h-5/6 w-1/2 p-12 flex justify-center flex-col gap-3`}>
-        <h1 className='text-4xl font-medium'>
+      <div className={`${accentColor} banner-content`}>
+        <h1 className='text-3xl md:text-4xl font-medium text-center lg:text-left drop-shadow-text lg:drop-shadow-none'>
           {title}
         </h1>
-        <p className='text-xl'>
+        <p className='text-lg md:text-xl text-center lg:text-left drop-shadow-text lg:drop-shadow-none'>
           {description}
         </p>
         <button
-          className='btn btn-primary self-start'
+          className='btn btn-primary lg:self-start'
           type='button'
         >
           Shop now
         </button>
       </div>
       
-      <div className='banner bg-stone-50 overflow-hidden'>
+      <div className='banner-container bg-stone-50 overflow-hidden'>
         <img src={img} alt={imgAlt} className='banner-img' />
       </div>
     </div>

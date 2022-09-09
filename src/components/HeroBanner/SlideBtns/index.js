@@ -37,7 +37,7 @@ const DotBtn = ({ page, setPage, dot }) => {
 const SlideBtns = ({ page, setPage, pageCount }) => {
   return (
     <>
-      <div className='flex items-center justify-center gap-2 absolute bottom-0 left-0 h-1/6 w-2/5'>
+      <div className='dot-btns'>
         {[...Array(pageCount + 1)].map((n, i) =>
           <DotBtn
             page={page}
@@ -48,7 +48,7 @@ const SlideBtns = ({ page, setPage, pageCount }) => {
         )}
       </div>
 
-      <div className='banner flex justify-between items-center'>
+      <div className='arrow-btns'>
         <ArrowBtn
           icon={<BsCaretLeftFill size='30' />}
           page={page}
