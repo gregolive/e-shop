@@ -62,4 +62,15 @@
   .slider-dot.active {
     @apply bg-blue-900 opacity-100 hover:bg-blue-700
   }
+
+  /* Product Sections */
+
+  .product-section {
+    @apply flex flex-col items-center gap-2 w-full
+    px-4 sm:px-10 lg:px-28 py-32 
+  }
+
+  .product-grid {
+    @apply grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8 pt-10
+  }
 }
